@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.login-container {
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h1 {
+    margin-top: 70px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.form p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 7px 0;
+}
+
+.form input {
+    min-width: 400px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.pass-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.pass-forgot a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+}
+
+
+input.login-btn {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #57b846;
+    color: #fff;
+    padding: 14px 0 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.2s;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input.login-btn:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+a.create-acc {
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+

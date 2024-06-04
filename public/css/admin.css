@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left-side-menu {
+    background-color: #2a3f54;
+}
+
+.sidebar-admin li a {
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 30px 8px 26px;
+    /* display: flex;
+    align-items: center; */
+}
+
+.sidebar-admin li a.nav-active:hover {
+    background-color: #fafbfe;
+    color: #000 !important;
+}
+
+.sidebar-admin li a:hover {
+    background-color: #35495d;
+    color: #fff;
+}
+
+.sidebar-admin li a i {
+    width: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+.side-nav .side-nav-link {
+    display: flex;
+    color: #fff;
+}
+
+.side-nav .side-nav-link:hover {
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.input-group input {
+    border-radius: 5px !important;
+}
+
+.input-group i.search-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    font-size: 15px;
+    z-index: 99;
+    color: #000;
+}
+
+.btn-success {
+    margin-bottom: 5px;
+}
+
+table td {
+    font-weight: 500;
+}
+
+.logo-lg {
+    padding: 2px 0;
+    /* border-bottom: 1px solid #748191; */
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.content {
+    padding: 30px 0 30px 10px;
+}
+
+.card-body {
+    padding: 20px 10px 30px 10px;
+}
+
+.nav-active {
+    background-color: #fafbfe;
+    color: #000 !important;
+}
+
+.card-body button {
+    
+}

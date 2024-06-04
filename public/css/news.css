@@ -1,0 +1,153 @@
+.news-container {
+    color: #000;
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.content {
+    padding: 10px 0;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.news__sidebar--title {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.post-item:hover {
+    /* background-color: #e5e5e5; */
+    border: 2px solid #40c057;
+    transition: all 0.3s ease;
+}
+
+.post-item+.post-item {
+    margin-top: 5px;
+}
+
+.post-item__img {
+    padding: 10px 10px;
+    flex: 1;
+}
+
+.post-item__img img {
+    width: 100px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.post-item-container {
+    flex: 3;
+}
+
+.post-item__title {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+
+.post-item__time {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+/* news post */
+.news-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.news-post__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.news-post__time {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.news-post__img {
+    padding: 10px 0;
+}
+
+.news-post__img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.news-post-content {
+    text-align: justify;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 15px*1.5*3;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.news-detail-post-content {
+    text-align: justify;
+}
+
+.news-detail-post-content img {
+    width: 100%;
+    height: auto;
+}
+
+.news-post-btn {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-post-btn button {
+    padding: 5px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.news-post-btn button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.news-post-btn button .fa-arrow-right {
+    margin-left: 10px;
+}

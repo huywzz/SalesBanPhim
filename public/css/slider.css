@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+}
+
+.slide-item {
+    margin: 0 !important;
+}
+
+.slide-item a img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.slider-container {
+    margin-top: -100px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-container {
+    padding: 0;
+}
+
+.product-container-slider {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.product-container-slider:hover .slick-prev {
+    transform: translateY(-50%) translateX(-100%);
+    cursor: pointer;
+}
+
+.product-container-slider:hover .slick-next {
+    transform: translateY(-50%) translateX(100%);
+    cursor: pointer;
+}
+
+.product-container-slider:hover .slick-prev i,
+.product-container-slider:hover .slick-next i {
+    color: var(--black);
+    opacity: 1;
+}
+
+.product-container-item {
+    width: 30%;
+    height: 400px;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item__img img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.product-item__img {
+    position: relative;
+    height: 300px;
+}
+
+.product-img {
+    position: absolute;
+}
+
+.product-img.img-2 {
+    animation: fadeIn 0.3s linear;
+}
+
+.product-item__img:hover .product-img.img-2 {
+    display: block;
+}
+
+.product-img.img-2 {
+    display: none;
+}
+
+.sold-out {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: calc(50% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfdfd;
+    opacity: 0.85;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-container-item a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.product-item--description {
+    font-size: 13px;
+    padding: 10px;
+}
+
+.product-item__category,
+.product-item__name,
+.product-item__price {
+    padding: 2px 0;
+}
+
+.product-item__category {
+    text-transform: uppercase;
+}
+
+.product-item__name {
+    font-weight: 500;
+}
+
+.product-item__price {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.slick-initialized .slick-slide {
+    margin: 0 10px;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider:hover .slick-prev,
+.slider:hover .slick-next {
+    opacity: 1;
+}
+
+.slider .slick-prev i,
+.slider .slick-next i {
+    color: #fff;
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 30px;
+    height: 100%;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.slick-prev {
+    left: 0;
+    transform: translateY(-50%) translateX(-90%);
+}
+
+.slick-next {
+    right: 0;
+    transform: translateY(-50%) translateX(90%);
+}
+
+.slick-prev i,
+.slick-next i {
+    font-size: 23px;
+    color: var(--white);
+}
+
+.slick-dots {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 16px 0;
+    list-style-type: none;
+}
+
+.slick-dots li {
+    margin: 0 4px;
+}
+
+.slick-dots button {
+    display: block;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #b8b8b8;
+    text-indent: -9999px;
+}
+
+.slick-dots button:hover {
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #717171;
+}
+
+.slick-list {
+    /* padding: 20px 0; */
+}
+
+
+/* INSTA_POST_SLIDER */
+.insta-post-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 5s ease;
+}
+
+.insta-post-item {
+    overflow: hidden;
+}
+
+.insta-post-item:hover img {
+    transform: scale(1.2);
+    transition: all 5s ease;
+}
